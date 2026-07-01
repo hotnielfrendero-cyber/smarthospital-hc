@@ -111,10 +111,9 @@ if st.button("Predict Departmen"):
 
   patient_scaled[cols_to_scale] = scaler.transform(
     patient[cols_to_scale]
-    
   )
 
-  prediction = model.predic(
+  prediction = model.predict(
     patient_scaled[features]
   )[0]
 
