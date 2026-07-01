@@ -74,3 +74,17 @@ heart_rate_level = st.selectbox(
 hypertension = st.checkbox("High Blood Pressure")
 heart_disease = st.checkbox("Heart Disease")
 asthma = st.checkbox("Asthma")
+
+if st.button("Predict Department"):
+  patient = pd.DataFrame([{
+    'age': age,
+    'gender': gender_map. get(gender,0),
+    'fever': int(fever),
+    'cough': int(cough),
+    'headache': int(headache),
+    'chest_pain': int(chest_pain),
+    'stomach_pain': int(stomach_pain),
+    'sshortness_pain': int(shortness_pain),
+    'nausea_vomiting': int(nausea_vomiting),
+    'dizziness': int(dizziness),
+    'skin_rash': int(skin_rash),
