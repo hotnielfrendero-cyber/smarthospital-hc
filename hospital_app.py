@@ -88,3 +88,4 @@ if st.button("Predict Departmen"):
     'nausea_vomiting': int(nausea_vomiting),
     'dizziness': int(dizziness),
     'skin_rash': int(skin_rash),
+  }])
