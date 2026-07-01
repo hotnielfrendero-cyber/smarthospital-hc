@@ -2,13 +2,13 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-st.set_page_config(page_title="Smart hospital Navigator", page_icon="🏥")
+st.set_page_config(page_title="Smart Hospital Navigator", page_icon="🏥")
 
 st.title("🏥 Smart Hospital Navigator")
 
 @st.cache_resource
 def load_model():
-  with open('hospital_model.pkl", "rb") as f:
+  with open("hospital_model.pkl", "rb") as f:
     return pickle.load(f)
 
 bundle = load_model()
