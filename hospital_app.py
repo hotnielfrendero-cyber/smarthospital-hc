@@ -39,6 +39,7 @@ gender = st.selectbox(
 )
 
 st.header("Symptoms")
+
 fever = st.checkbox("Fever")
 headache = st.checkbox("headache")
 chest_pain = st.checkbox("chest_pain")
@@ -47,3 +48,18 @@ shortness_breath = st.checkbox("shortness_breath")
 nausea_vomiting = st.checkbox("nausea_vomiting")
 dizziness = st.checkbox("dizziness")
 skin_rash = st.checkbox("skin_rash")
+
+st.header("Medical Information")
+
+chief_complaint = st.selectbox(
+  "Chief_complaint",
+  list(cc_map.keys())
+)
+duration = st.selectbox(
+  "Duration", 
+  list(dur_map.keys())
+)
+temperature_level = st.selectbox
+  "Temperature",
+   list(temp_map.keys())
+)
