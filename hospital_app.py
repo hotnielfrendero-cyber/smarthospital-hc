@@ -98,7 +98,7 @@ if st.button("Predict Departmen"):
     'duration':
       dur_map.get(duration, 1),
 
-    'asthma': int(asthma)
+    'asthma': int(asthma),
     'hypertension': int(hypertension),
     'heart_disease': int(heart_disease), 
 
