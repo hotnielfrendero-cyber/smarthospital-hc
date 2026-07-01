@@ -36,4 +36,4 @@ age = st.number_input(
 gender = st.selectbox(
 "Gender",
 ["Female", "Male"]
-(
+)
