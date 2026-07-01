@@ -31,6 +31,8 @@ age = st.number_input(
   min_value=1,
   max_value=120, 
   value=35
+
+  
 )
 
 gender = st.selectbox(
@@ -63,3 +65,12 @@ temperature_level = st.selectbox(
   "Temperature",
    list(temp_map.keys())
 )
+
+heart_rate_level = st.selecbox(
+  "Heart Rate",
+  list(hr_map.keys())
+)
+
+hypertension = st.checkbox("High Blood Pressure")
+heart_disease = st.checkbox("Heart Disease")
+asthma = st.checkbox("Asthma")
