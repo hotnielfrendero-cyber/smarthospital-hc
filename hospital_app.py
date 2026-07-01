@@ -14,7 +14,7 @@ def load_model():
 bundle = load_model()
 
 model = bundle['model']
-sclaer = bundle['scaler']
+scaler = bundle['scaler']
 features = bundle['features']
 cols_to_scale = bundle['cols_to_scale']
 dept_map_inv = bundle['dept_map_inv']
