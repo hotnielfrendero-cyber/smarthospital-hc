@@ -75,10 +75,10 @@ hypertension = st.checkbox("High Blood Pressure")
 heart_disease = st.checkbox("Heart Disease")
 asthma = st.checkbox("Asthma")
 
-if st.button("Predict Department"):
+if st.button("Predict Departmen"):
   patient = pd.DataFrame([{
     'age': age,
-    'gender': gender_map. get(gender,0),
+    'gender': gender_map. get(gender, 0),
     'fever': int(fever),
     'cough': int(cough),
     'headache': int(headache),
