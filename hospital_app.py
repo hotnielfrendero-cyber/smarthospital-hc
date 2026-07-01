@@ -53,11 +53,11 @@ st.header("Medical Information")
 
 chief_complaint = st.selectbox(
   "Chief_complaint",
-  list(cc_map.keys())
+   list(cc_map.keys())
 )
 duration = st.selectbox(
   "Duration", 
-  list(dur_map.keys())
+   list(dur_map.keys())
 )
 temperature_level = st.selectbox
   "Temperature",
